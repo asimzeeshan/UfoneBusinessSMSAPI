@@ -19,6 +19,13 @@ In order to send a group SMS, create the group in UfoneBusinessSMS control panel
     $result = $sms->sendGroupSMS("NOC", "Hello there! - Sent using https://github.com/asimzeeshan/UfoneBusinessSMSAPI");
     // If it returns something like "Successful:16340543", the SMS was sent successfully
 
+If class is instantiated with the "log" debug_Level a log file will be generated at the same location with the name `ufone_api.log`. This might come very handy in debugging issues, here are a few lines for your review
+
+    [2014-12-17 12:17:14 pm PKT] WARNING: MSISDN length should be 11 digits, '3351111111' does not look right!
+    [2014-12-17 12:24:32 pm PKT] ERROR: '03334444555' is not a valid recipient, it should start with 92
+    [2014-12-17 12:37:12 pm PKT] ERROR: '92333444455A' is not a valid recipient, it should be 12 digits in length and start with 92
+
+
 ### License
 
 This is licensed under [GNU GPL v2.0](http://choosealicense.com/licenses/gpl-2.0/)
