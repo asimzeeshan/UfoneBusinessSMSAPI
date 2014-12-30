@@ -80,10 +80,9 @@ class UfoneBusinessSMS {
      * write everything to a log file IF debug_level=log
      */
     private function _generateLogFile($string) {
-        $path = dirname(__FILE__);
         $date = date('Y-m-d h:i:s a T');
         $content_to_write = "[".$date."] ".$string;
-        file_put_contents("$path/ufone_api.log", $content_to_write, FILE_APPEND | LOCK_EX);
+        file_put_contents("ufone_api.log", $content_to_write, FILE_APPEND);
     }
 
     /*
