@@ -2,6 +2,8 @@
 ## Project data
 #################
 test.php
+cli_test.php
+send_sms.php
 ufone_api.log
 
 #################
